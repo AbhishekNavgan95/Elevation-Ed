@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <title>Elevation-Ed</title>
+  </head>
+  <body>
+
+    <a href="#" class="position-fixed bottom-0 end-0 py-4 px-4">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Elevation-Ed</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Latest</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="bg-dark text-light py-5 px-2 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <img
+          class="img-fluid w-100"
+          src="assets/image-removebg-preview.png"
+          alt=""
+          />
+          <div>          
+            <h1><span class="text-warning"> Master the Code: </span></h1>
+            <h1>Elevate Your Skills with <br/> Elevation-Ed</span></h1>
+            <p class="lead mt-4">From beginner to expert, embark on a journey of skill enhancement with hands-on projects, expert guidance, and a dynamic learning environment.<br/> Dive into the coding universe and redefine your future. Start coding Today.</p>
+            <p class="lead mb-4"></p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Enroll now
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary text-light py-5 px-2">
+      <div class="container">
+        <div class="d-sm-flex gap-2 gap-md-5 w-100 flex-column flex-md-row justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0 text-center text-lg-start">Get updates regarding our upcoming courses</h3>
+            <div class="input-group m-auto">
+                <input type="text" required class="form-control" placeholder="Enter Email" />
+                <button class="btn btn-dark btn-lg" type="button">Submit</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 px-2">
+      <div class="container">
+        <div class="text-center text-dark mb-5">
+          <h2 class="mb-4">Benifits of choosing us</h2>
+          <hr class="w-50 m-auto bg-dark" style="height: 3px;">
+        </div>
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-secondary text-light p-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Expert-Led Instruction</h3>
+                <p class="card-text fs-5">
+                  Learn from industry experts, gaining valuable insights and practical skills for success in the ever-evolving programming landscape.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light p-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hands-On Learning</h3>
+                <p class="card-text fs-5">
+                  Immerse yourself in real-world projects, applying theoretical knowledge to hands-on coding experiences, ensuring practical proficiency in programming.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light p-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">Flexible Learning Paths</h3>
+                <p class="card-text fs-5">
+                  Tailor your learning journey with our flexible courses, allowing you to pace yourself and specialize in areas that align with your career goals.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="py-5 px-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md text-center">
+            <img src="assets/fundamentals.jpg" class="img-fluid" alt=""/>
+          </div>
+          <div class="col-md p-3">
+            <h2 class="mb-3 h1">Learn The Fundamentals</h2>
+            <p class="lead">
+              At Elevation-Ed, we specialize in curating dynamic programming courses designed to bridge theory with hands-on expertise. Our commitment is to empower learners with practical skills, preparing them for success in the ever-evolving world of technology. Join us on a transformative learning journey where innovation meets education, and together, let's elevate your programming prowess
+            </p>
+            <a href="#" class="btn btn-dark mt-3"> Read More 
+              <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="py-5 px-2 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-3 best-seller">
+            <h2 class="mb-4 h1"><span class="text-warning">CodeCraft Pro:<span class="badge bg-secondary mx-3 py-2 px-3">New</span> <br/></span>Mastering Full-Stack <br/>Development</h2>
+            <p class="lead">
+              Dive into 'CodeCraft Pro' at Elevation-Ed for a hands-on journey in full-stack development. Elevate your coding skills with expert mentorship, practical projects, and a career-focused curriculum. Craft excellence with us.
+            </p>
+            <p class="lead">
+              Embark on innovation with 'CodeCraft Pro' at Elevation-Ed. Unleash full-stack development expertise through hands-on projects and expert guidance. Elevate your coding skills, gain in-demand knowledge, and open doors to a world of opportunities.
+            </p>
+            <a href="#" class="btn btn-light mt-3"> Read More 
+              <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+          <div class="col-md my-4">
+            <img src="assets/course.jpg" class="img-fluid img-thumbnail rounded-3" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="questions" class="py-3 px-2">
+      <div class="container">
+        <div class="text-center text-dark">
+          <h2 class="my-4">Frequently Asked Questions</h2>
+          <hr class="w-50 m-auto bg-dark" style="height: 3px;">
+        </div>
+        <div class="row">
+          <div class="accordion m-auto accordion-flush col-12 col-lg-8 my-5" id="questions">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-one"
+                >
+                What makes Elevation-Ed's programming courses stand out?
+                </button>
+              </h2>
+              <div
+                id="question-one"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Elevation-Ed stands out with expert-led instruction, hands-on projects, and a flexible learning approach, ensuring a dynamic and practical experience that prepares you for real-world challenges.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-two"
+                >
+                Can I access course materials at my own pace?
+                </button>
+              </h2>
+              <div
+                id="question-two"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Absolutely! Our courses are designed for flexibility. You can access materials at your own pace, allowing you to balance learning with other commitments while still enjoying a comprehensive educational experience.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-three"
+                >
+                How do I interact with instructors and peers?
+                </button>
+              </h2>
+              <div
+                id="question-three"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  We foster a collaborative environment through discussion forums, live Q&A sessions, and project feedback. Connect with instructors and peers, enhancing your learning experience with valuable insights and networking opportunities.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-four"
+                >
+                Are there any prerequisites for enrolling in courses?
+                </button>
+              </h2>
+              <div
+                id="question-four"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Our courses cater to various skill levels, with prerequisites clearly outlined. Whether you're a beginner or an experienced coder, there's a suitable course for you. Check the course details for specific requirements.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-five"
+                >
+                What career support does Elevation-Ed provide?
+                </button>
+              </h2>
+              <div
+                id="question-five"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Elevation-Ed offers career guidance, resume reviews, and access to job boards. We're dedicated to supporting your career journey, helping you apply your newfound skills in the professional world successfully.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 text-center my-5">
+            <img src="assets/FAQs.png" class="" style="width: 150px;" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white mb-4">Our Instructors</h2>
+        <hr class="w-50 m-auto bg-dark my-3" style="height: 3px;">
+        <p class="lead text-center text-white mb-5 w-50 m-auto">
+          Expert instructors at Elevation-Ed bring industry wisdom, passion, and hands-on experience to enrich your learning journey.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light rounded-3">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">
+                  John, a coding maestro, combines expertise and enthusiasm, guiding you through the programming landscape with precision.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light rounded-3">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Jane Doe</h3>
+                <p class="card-text">
+                  Jane, a tech virtuoso, empowers learners with a blend of insight and hands-on experience in coding mastery.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light rounded-3">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Steve Smith</h3>
+                <p class="card-text">
+                  Steve, coding guru, imparts practical knowledge and innovation, fostering a dynamic learning environment for programming excellence.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light rounded-3">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Sara Smith</h3>
+                <p class="card-text">
+                  Sara, tech luminary, leads with expertise and passion, sculpting coding enthusiasts into industry-ready professionals with precision.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3 px-2">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="my-4">
+              <h2 class="text-center mb-4">Contact Info</h2>
+              <hr class="w-50 m-auto bg-dark" style="height: 3px;">
+            </div>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bolder">Address</span>123 Coding Street, Tech Valley, Cityville, Country.
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bolder">Phone:</span>+1 (555) 123-4567
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bolder">Email:</span> info@elevation-ed.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bolder">Have a specific inquiry? Fill out our contact form, and we'll get back to you shortly.</span>
+              </li>
+              <li class="list-group-item">
+                <button class="btn btn-primary py-2 px-5 mt-4" 
+                data-bs-toggle="modal"
+                data-bs-target="#enroll" type="button">Fill form</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-2 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 Elevation-Ed</p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content px-3">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead fw-bolder">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="row">
+                <div class="mb-3 col-6">
+                  <label for="first-name" class="col-form-label">
+                    First Name:
+                  </label>
+                  <input type="text" class="form-control" required id="first-name" />
+                </div>
+                <div class="mb-3 col-6">
+                  <label for="last-name" class="col-form-label">Last Name:</label>
+                  <input type="text" class="form-control" required id="last-name" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" required id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" required id="phone" />
+              </div>
+              <input type="submit"
+              class="btn btn-primary"></button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
